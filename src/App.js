@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 import './index.css';
 import siteLogo from '../src/assests/site-logo.png';
+import Banner from './components/Banner';
+import Data from './components/Data';
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -57,49 +59,54 @@ function App() {
             <div className="navbar-wrapper">
               <ul className="navbar-ul">
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(0)}>Section 1</button>
+                  <button onClick={() => scrollToSection(0)}>Data</button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(1)}>Section 2</button>
+                  <button onClick={() => scrollToSection(1)}>
+                    Signals Generation
+                  </button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(2)}>Section 3</button>
+                  <button onClick={() => scrollToSection(2)}>Backtest</button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(3)}>Section 4</button>
+                  <button onClick={() => scrollToSection(3)}>
+                    Optimization
+                  </button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(4)}>Section 5</button>
+                  <button onClick={() => scrollToSection(4)}>Execution</button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(5)}>Section 6</button>
+                  <button onClick={() => scrollToSection(5)}>
+                    Portfoilo Allocation
+                  </button>
                 </li>
               </ul>
             </div>
           </nav>
         </div>
 
-        <div className="height" ref={(ref) => (sectionRefs.current[0] = ref)}>
-          <h2>Section 1</h2>
-          <p>This is the content of section 1.</p>
+        {/* BODY SECTION */}
+        <div>
+          <Banner />
+        </div>
+        <div ref={(ref) => (sectionRefs.current[0] = ref)}>
+          <Data />
         </div>
         <div className="height" ref={(ref) => (sectionRefs.current[1] = ref)}>
-          <h2>Section 2</h2>
-          <p>This is the content of section 2.</p>
-        </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[2] = ref)}>
           <h2>Section 3</h2>
           <p>This is the content of section 3.</p>
         </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[3] = ref)}>
+        <div className="height" ref={(ref) => (sectionRefs.current[2] = ref)}>
           <h2>Section 4</h2>
           <p>This is the content of section 4.</p>
         </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[4] = ref)}>
+        <div className="height" ref={(ref) => (sectionRefs.current[3] = ref)}>
           <h2>Section 5</h2>
           <p>This is the content of section 5.</p>
         </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[5] = ref)}>
+        <div className="height" ref={(ref) => (sectionRefs.current[4] = ref)}>
           <h2>Section 6</h2>
           <p>This is the content of section 6.</p>
         </div>
