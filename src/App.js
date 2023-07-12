@@ -4,6 +4,7 @@ import './index.css';
 import siteLogo from '../src/assests/site-logo.png';
 import Banner from './components/Banner';
 import Data from './components/Data';
+import SignalGeneration from './components/SignalGeneration';
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -35,7 +36,7 @@ function App() {
 
   const scrollToSection = (index) => {
     const section = sectionRefs.current[index];
-    const yOffset = -70;
+    const yOffset = -50;
     const y =
       section.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
@@ -53,32 +54,32 @@ function App() {
       <div>
         <div className="sticky-nav" style={headerStyle}>
           <nav className="navbar">
-            <div className="site-logo">
+            <div className="site-logo" onClick={() => scrollToSection(0)}>
               <img src={siteLogo} className="logo" alt="logo" />
             </div>
             <div className="navbar-wrapper">
               <ul className="navbar-ul">
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(0)}>Data</button>
+                  <button onClick={() => scrollToSection(1)}>Data</button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(1)}>
+                  <button onClick={() => scrollToSection(2)}>
                     Signals Generation
                   </button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(2)}>Backtest</button>
+                  <button onClick={() => scrollToSection(3)}>Backtest</button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(3)}>
+                  <button onClick={() => scrollToSection(4)}>
                     Optimization
                   </button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(4)}>Execution</button>
+                  <button onClick={() => scrollToSection(5)}>Execution</button>
                 </li>
                 <li className="navbar-li">
-                  <button onClick={() => scrollToSection(5)}>
+                  <button onClick={() => scrollToSection(6)}>
                     Portfoilo Allocation
                   </button>
                 </li>
@@ -88,25 +89,24 @@ function App() {
         </div>
 
         {/* BODY SECTION */}
-        <div>
+        <div ref={(ref) => (sectionRefs.current[0] = ref)}>
           <Banner />
         </div>
-        <div ref={(ref) => (sectionRefs.current[0] = ref)}>
+        <div ref={(ref) => (sectionRefs.current[1] = ref)}>
           <Data />
         </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[1] = ref)}>
-          <h2>Section 3</h2>
-          <p>This is the content of section 3.</p>
+        <div ref={(ref) => (sectionRefs.current[2] = ref)}>
+          <SignalGeneration />
         </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[2] = ref)}>
+        <div className="height" ref={(ref) => (sectionRefs.current[3] = ref)}>
           <h2>Section 4</h2>
           <p>This is the content of section 4.</p>
         </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[3] = ref)}>
+        <div className="height" ref={(ref) => (sectionRefs.current[4] = ref)}>
           <h2>Section 5</h2>
           <p>This is the content of section 5.</p>
         </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[4] = ref)}>
+        <div className="height" ref={(ref) => (sectionRefs.current[5] = ref)}>
           <h2>Section 6</h2>
           <p>This is the content of section 6.</p>
         </div>

@@ -117,6 +117,7 @@ p {
 .logo {
   width: 80px;
   height: auto;
+  cursor: pointer;
 }
 
 .navbar-wrapper {
@@ -202,8 +203,75 @@ p {
 
 .data-content-icon {
   margin-right: 3rem;
+  padding: 0.2rem;
+  border-radius: 50%;
+  border: 3px solid rgba(30, 192, 255, 0.3);
+}
+
+.data-content-icon img {
+  margin: 15px;
 }
 
 .data-content-description h3 {
   margin-bottom: 0.6rem;
+}
+
+/* SIGNAL GENERATION CSS */
+.signal {
+  background: linear-gradient(104.56deg, #0d5e9b 4.04%, #1ec0ff 96.06%);
+  width: 100%;
+}
+
+/* .signal .container {
+  padding: 4rem 0rem;
+} */
+
+.signal-title h2 {
+  color: var(--white-color);
+}
+
+.signals-divider {
+  margin-top: 2rem;
+  border-top: 3px solid var(--white-color);
+}
+
+.signal-main {
+  padding-top: 0rem;
+  padding-bottom: 4rem;
+}
+
+.signals-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.signals-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.signals-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.wiring-des {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wiring-des h3 {
+  color: var(--white-color);
+  margin: 0.8rem 0;
+}
+
+.wiring-des p {
+  color: var(--white-color);
+  text-align: center;
 }
