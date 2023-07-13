@@ -5,6 +5,7 @@ import siteLogo from '../src/assests/site-logo.png';
 import Banner from './components/Banner';
 import Data from './components/Data';
 import SignalGeneration from './components/SignalGeneration';
+import Backtest from './components/Backtest';
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -98,9 +99,8 @@ function App() {
         <div ref={(ref) => (sectionRefs.current[2] = ref)}>
           <SignalGeneration />
         </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[3] = ref)}>
-          <h2>Section 4</h2>
-          <p>This is the content of section 4.</p>
+        <div ref={(ref) => (sectionRefs.current[3] = ref)}>
+          <Backtest />
         </div>
         <div className="height" ref={(ref) => (sectionRefs.current[4] = ref)}>
           <h2>Section 5</h2>
