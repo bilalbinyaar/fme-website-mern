@@ -9,6 +9,7 @@ import Backtest from './components/Backtest';
 import Optimization from './components/Optimization';
 import PortfolioAllocation from './components/PortfolioAllocation';
 import Execution from './components/Execution';
+import Footer from './components/Footer';
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -114,9 +115,8 @@ function App() {
         <div ref={(ref) => (sectionRefs.current[6] = ref)}>
           <PortfolioAllocation />
         </div>
-        <div className="height">
-          <h2>Footer</h2>
-          <p>This is the content of Footer.</p>
+        <div>
+          <Footer />
         </div>
       </div>
     </React.Fragment>
