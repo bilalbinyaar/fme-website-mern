@@ -8,6 +8,7 @@ import SignalGeneration from './components/SignalGeneration';
 import Backtest from './components/Backtest';
 import Optimization from './components/Optimization';
 import PortfolioAllocation from './components/PortfolioAllocation';
+import Execution from './components/Execution';
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -107,9 +108,8 @@ function App() {
         <div ref={(ref) => (sectionRefs.current[4] = ref)}>
           <Optimization />
         </div>
-        <div className="height" ref={(ref) => (sectionRefs.current[5] = ref)}>
-          <h2>Section 6</h2>
-          <p>This is the content of section 6.</p>
+        <div ref={(ref) => (sectionRefs.current[5] = ref)}>
+          <Execution />
         </div>
         <div ref={(ref) => (sectionRefs.current[6] = ref)}>
           <PortfolioAllocation />
