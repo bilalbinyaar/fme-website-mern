@@ -540,13 +540,14 @@ tr {
   width: 20%;
 }
 
-/* .footer-socials {
-  margin-top: -0.4rem;
-} */
-
 .footer-socials svg {
   color: var(--light-color);
-  margin: 0 0.4rem;
+  margin: 0 0.2rem;
   font-size: 20px;
   cursor: pointer;
+}
+
+/* CATERINGN ISSUES CSS */
+.catering .container {
+  padding: 4rem 0;
 }

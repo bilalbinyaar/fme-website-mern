@@ -10,6 +10,7 @@ import Optimization from './components/Optimization';
 import PortfolioAllocation from './components/PortfolioAllocation';
 import Execution from './components/Execution';
 import Footer from './components/Footer';
+import CateringIssues from './components/CateringIssues';
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -114,6 +115,7 @@ function App() {
         </div>
         <div ref={(ref) => (sectionRefs.current[6] = ref)}>
           <PortfolioAllocation />
+          <CateringIssues />
         </div>
         <div>
           <Footer />

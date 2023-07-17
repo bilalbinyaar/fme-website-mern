@@ -4,7 +4,9 @@ const CateringIssues = () => {
   return (
     <div className="catering">
       <div className="container">
-        <h1>This is Catering Issues Section</h1>
+        <div className="section-title">
+          <h2>Catering for Issues</h2>
+        </div>
       </div>
     </div>
   );
