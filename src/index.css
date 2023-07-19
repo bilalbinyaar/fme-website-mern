@@ -503,7 +503,7 @@ tr {
 
 .footer-inner p {
   margin-bottom: 2rem;
-  color: var(--gray-color);
+  color: rgba(255, 255, 255, 0.3);
   font-weight: 500;
 }
 
@@ -550,4 +550,94 @@ tr {
 /* CATERINGN ISSUES CSS */
 .catering .container {
   padding: 4rem 0;
+  flex-direction: column;
+}
+
+.catering-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0 2rem 0;
+}
+
+.catering-top-content {
+  padding: 2rem 0rem 2rem 3rem;
+  background-color: rgba(30, 192, 255, 0.05);
+  border-radius: 10px;
+  width: 80%;
+}
+
+.catering-mr {
+  margin-right: 1rem;
+}
+
+.catering-top-content h3 {
+  margin: 0.6rem 0 0.6rem 0;
+}
+
+.catering-top-content p {
+  width: 60%;
+}
+
+.catering-bottom {
+  padding: 2rem 0;
+  border: 5px solid var(--light-color);
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.c-shape-1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 2rem;
+}
+
+.c-shape-1 img {
+  width: 80px;
+}
+
+.c-textual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.c-textual-head {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+
+.c-textual-head h2 {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.c-textual-head img {
+  width: 50%;
+}
+
+.c-textual h3 {
+  width: 30%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.c-shape-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.c-shape-2 img {
+  width: 60px;
 }
