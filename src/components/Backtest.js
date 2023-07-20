@@ -5,7 +5,7 @@ import b_2 from '../assests/b-2.png';
 import b_3 from '../assests/b-3.png';
 import b_4 from '../assests/b-4.png';
 import b_5 from '../assests/b-5.png';
-import b_6 from '../assests/b-5.png';
+import b_6 from '../assests/b-6.png';
 
 const Backtest = () => {
   return (

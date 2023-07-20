@@ -13,7 +13,7 @@ const Banner = () => {
               vitae erat eu risus varius ultricies
             </p>
           </div>
-          <div className="banner-left">
+          <div className="banner-left res-dn">
             <img src={bannerImg} alt="banner-img" />
           </div>
         </div>

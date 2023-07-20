@@ -28,6 +28,7 @@ function App() {
   }, []);
 
   const headerStyle = {
+    'sticky-header': isSticky,
     position: isSticky ? 'fixed' : 'relative',
     top: 0,
     left: 0,
@@ -38,6 +39,7 @@ function App() {
     boxShadow: isSticky ? '0px 3px 10px 0px #2b2b2b27' : 'none',
     transition: 'box-shadow 0.5s ease-in-out',
   };
+
   const sectionRefs = useRef([]);
 
   const scrollToSection = (index) => {
