@@ -120,6 +120,24 @@ p {
   }
 }
 
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 9px;
+  }
+}
+
 /* NAVBAR CSS */
 .sticky-nav {
   top: 0;
@@ -213,16 +231,20 @@ p {
 }
 
 @media (max-width: 586px) {
-  /* .navbar-wrapper {
+  .navbar-wrapper {
     display: none;
   }
 
   .sticky-nav {
-    height: 50px !important;
-  } */
+    height: 55px !important;
+  }
 
-  .sticky-nav {
-    display: none !important;
+  .logo {
+    width: 75px;
+  }
+
+  .navbar {
+    justify-content: center;
   }
 }
 
@@ -285,6 +307,13 @@ p {
   .banner-left h1 {
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .banner-left h1 {
+    font-size: 28px;
+    line-height: 30px;
   }
 }
 
@@ -610,6 +639,10 @@ tr {
     justify-content: center;
     align-items: center;
   }
+
+  .backtest-content-item {
+    padding: 0.8rem;
+  }
 }
 
 /* optimization CSS */
@@ -664,15 +697,16 @@ tr {
   }
 }
 
-/* @media screen and (max-width: 478px) {
-  .opt-text h2 {
-    width: 100%;
+@media screen and (max-width: 360px) {
+  .optimization .container {
+    padding: 2rem 0;
+    flex-direction: column;
   }
 
-  .opt-text p {
-    width: 100%;
+  .signals-divider {
+    margin-top: 1rem;
   }
-} */
+}
 
 /* PORTFOLIO CSS */
 .portfolio-text {
@@ -911,6 +945,20 @@ tr {
   .execution-content {
     padding: 1rem 0;
   }
+
+  .execution-content-top {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .exe-feature-outter {
+    margin-left: 0;
+  }
+
+  .execution .container {
+    padding: 2rem 0;
+  }
 }
 
 /* FOOTER CSS */
@@ -1020,6 +1068,12 @@ tr {
 
   .footer-inner p {
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer .container {
+    padding: 2rem 0;
   }
 }
 
@@ -1141,6 +1195,10 @@ tr {
     width: 40px;
   }
 
+  .c-shape-2 {
+    width: 95%;
+  }
+
   .c-shape-1 img {
     width: 40px;
   }
@@ -1163,5 +1221,27 @@ tr {
 @media screen and (max-width: 414px) {
   .catering-top {
     margin: 1rem 0 1rem 0;
+  }
+
+  .c-textual h3 {
+    width: 70%;
+  }
+
+  .c-textual-head img {
+    width: 38%;
+  }
+
+  .c-textual-head {
+    margin-bottom: 1rem;
+  }
+
+  .catering .container {
+    padding: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .catering-top-content {
+    padding: 1rem 0rem 1rem 1.4rem;
   }
 }
