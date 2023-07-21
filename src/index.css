@@ -1029,6 +1029,7 @@ tr {
   color: var(--white-color);
   border: none;
   width: 20%;
+  cursor: pointer;
 }
 
 .footer-socials svg {
