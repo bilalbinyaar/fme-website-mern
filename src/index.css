@@ -1246,3 +1246,8 @@ tr {
     padding: 1rem 0rem 1rem 1.4rem;
   }
 }
+
+div:where(.swal2-container) h2:where(.swal2-title) {
+  padding: 2rem !important;
+  font-size: 1.4em !important;
+}

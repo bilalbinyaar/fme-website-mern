@@ -16,8 +16,15 @@ app.post('/', async (req, res) => {
     email: email,
     message: message,
   };
+  try {
+    await collection.insertMany([data]);
 
-  await collection.insertMany([data]);
+    res.status(200).json({ message: 'Form submitted successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Something went wrong' });
+  }
+  // await collection.insertMany([data]);
 });
 
 app.listen(8000, () => {
